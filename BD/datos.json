@@ -1,0 +1,29 @@
+{
+ "test1":{
+  "vueloida":"Madrid (MAD)",
+  "vueloreg":"Cancún (CUN)", 
+  "fechaida":"01012023" , 
+  "fechareg":"16012023",
+  "adult":2,
+  "child":0,
+  "baby":0
+ },
+ "test2":{
+  "vueloida":"La Habana (HAV)",
+  "vueloreg":"Madrid (MAD)", 
+  "fechaida":"03022023" ,
+  "fechareg":"02042023",
+  "adult":1,
+  "child":1,
+  "baby":0
+ },
+ "test3":{
+  "vueloida":"Badajoz (BJZ)",
+  "vueloreg":"Barcelona (BCN)", 
+  "fechaida":"15122022" , 
+  "fechareg":"15012023",
+  "adult":2,
+  "child":1,
+  "baby":1
+ }
+}

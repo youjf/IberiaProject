@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-11-28 08:35:35</p>
+                <p class='attribute'><strong>Duration: </strong>46.35 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 2, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.BuscarVuelosTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_buscar_vuelo_1_test1</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Test completado
+</p><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1068, 569)
+  (Session info: chrome=107.0.5304.108)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0032ACD3+2075859]
+	Ordinal0 [0x002BEE61+1633889]
+	Ordinal0 [0x001BB7BD+571325]
+	Ordinal0 [0x001F1499+791705]
+	Ordinal0 [0x001EF4AC+783532]
+	Ordinal0 [0x001ED0AB+774315]
+	Ordinal0 [0x001EBD37+769335]
+	Ordinal0 [0x001E1C76+728182]
+	Ordinal0 [0x0020731C+881436]
+	Ordinal0 [0x001E15BF+726463]
+	Ordinal0 [0x00207534+881972]
+	Ordinal0 [0x0021B56A+963946]
+	Ordinal0 [0x00207136+880950]
+	Ordinal0 [0x001DFEFD+720637]
+	Ordinal0 [0x001E0F3F+724799]
+	GetHandleVerifier [0x005DEED2+2769538]
+	GetHandleVerifier [0x005D0D95+2711877]
+	GetHandleVerifier [0x003BA03A+521194]
+	GetHandleVerifier [0x003B8DA0+516432]
+	Ordinal0 [0x002C682C+1665068]
+	Ordinal0 [0x002CB128+1683752]
+	Ordinal0 [0x002CB215+1683989]
+	Ordinal0 [0x002D6484+1729668]
+	BaseThreadInitThunk [0x76936939+25]
+	RtlGetFullPathName_UEx [0x77928FD2+1218]
+	RtlGetFullPathName_UEx [0x77928F9D+1165]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\ddt.py", line 220, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\yousy.jorge.fajardo\pythonProject\IberiaProject\tests\buscar_vuelos.py", line 24, in test_buscar_vuelo
+    formbusqueda.click_cookie_button()
+  File "C:\Users\yousy.jorge.fajardo\pythonProject\IberiaProject\pages\buscarVuelosPage.py", line 26, in click_cookie_button
+    self.driver.find_element(By.ID, self.cookie_aceptar_button_id).click()
+  File "C:\Python39\lib\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python39\lib\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1068, 569)
+  (Session info: chrome=107.0.5304.108)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0032ACD3+2075859]
+	Ordinal0 [0x002BEE61+1633889]
+	Ordinal0 [0x001BB7BD+571325]
+	Ordinal0 [0x001F1499+791705]
+	Ordinal0 [0x001EF4AC+783532]
+	Ordinal0 [0x001ED0AB+774315]
+	Ordinal0 [0x001EBD37+769335]
+	Ordinal0 [0x001E1C76+728182]
+	Ordinal0 [0x0020731C+881436]
+	Ordinal0 [0x001E15BF+726463]
+	Ordinal0 [0x00207534+881972]
+	Ordinal0 [0x0021B56A+963946]
+	Ordinal0 [0x00207136+880950]
+	Ordinal0 [0x001DFEFD+720637]
+	Ordinal0 [0x001E0F3F+724799]
+	GetHandleVerifier [0x005DEED2+2769538]
+	GetHandleVerifier [0x005D0D95+2711877]
+	GetHandleVerifier [0x003BA03A+521194]
+	GetHandleVerifier [0x003B8DA0+516432]
+	Ordinal0 [0x002C682C+1665068]
+	Ordinal0 [0x002CB128+1683752]
+	Ordinal0 [0x002CB215+1683989]
+	Ordinal0 [0x002D6484+1729668]
+	BaseThreadInitThunk [0x76936939+25]
+	RtlGetFullPathName_UEx [0x77928FD2+1218]
+	RtlGetFullPathName_UEx [0x77928F9D+1165]
+
+C:\Users\yousy.jorge.fajardo\pythonProject\IberiaProject\tests\buscar_vuelos.py:14: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path="driver/chromedriver.exe")
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_buscar_vuelo_2_test2</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Test completado
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_buscar_vuelo_3_test3</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Test completado
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 2, Error: 1 -- Duration: 46.35 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

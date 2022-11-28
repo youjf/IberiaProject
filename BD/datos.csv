@@ -1,0 +1,4 @@
+vuelo_origen,vuelo_destino,fecha_ida,fecha_retorno,adultos,children,baby
+Madrid (MAD),Cancún (CUN),01012023,16012023,2,0,0
+La Habana (HAV),Madrid (MAD),03042023,02022023,1,1,0
+Badajoz (BJZ),Barcelona (BCN),15122022,15012023,2,1,1
